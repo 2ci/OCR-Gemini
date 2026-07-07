@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.ocr/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+scanned_output/
+drafts/
+ocr_*.txt
+ocr.txt
+*.dev
