@@ -6,7 +6,7 @@ Both modules are fully decoupled and can be utilized completely independently de
 
 ---
 
-## 🚀 Features
+## Features
 
 ### 1. Document Image Preprocessing (`cam_scanner.py`)
 * **Standalone Operation:** Functions fully offline as a high-fidelity document enhancer without external API dependencies.
@@ -20,7 +20,7 @@ Both modules are fully decoupled and can be utilized completely independently de
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 Follow these steps to set up an isolated environment and install dependencies:
 
@@ -72,7 +72,7 @@ GEMINI_API_KEY=your_actual_gemini_api_key_here
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 The project dynamically maps inputs and outputs through the following directory layout:
 
@@ -87,7 +87,7 @@ The project dynamically maps inputs and outputs through the following directory 
 
 ---
 
-## 🛠️ Workflows
+## Workflows
 
 ### Scenario A: Standalone Usage
 
@@ -119,12 +119,13 @@ python raw_gemini_scanner.py
 
 ---
 
-## 🔍 Native API Reference
+## Native API Reference
 
 The OCR implementation bypasses the abstraction layers of official SDKs, sending standard HTTP `POST` requests directly to the Gemini REST API:
 
 * **Endpoint:** `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}`
-* **Payload Structure:** ```python
+* **Payload Structure:**
+```python
 payload = {
     "contents": [{
         "parts": [
